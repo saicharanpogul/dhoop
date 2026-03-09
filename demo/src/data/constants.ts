@@ -100,7 +100,7 @@ export const ROADMAP_PHASES = [
   {
     phase: 0,
     title: "Foundation",
-    months: "0-2",
+    months: "0-1",
     items: [
       "Incorporate Indian SPV in Telangana",
       "Draft PPA & host agreements",
@@ -108,12 +108,12 @@ export const ROADMAP_PHASES = [
       "Identify 3-5 pilot hosts",
     ],
     capital: "INR 1 lakh",
-    status: "complete" as const,
+    status: "active" as const,
   },
   {
     phase: 1,
     title: "MVP Pilot",
-    months: "2-6",
+    months: "1-3",
     items: [
       "Install 3-5 rooftop systems",
       "Build monitoring dashboard",
@@ -121,12 +121,12 @@ export const ROADMAP_PHASES = [
       "Prepare investor pitch data",
     ],
     capital: "INR 10-15 lakh",
-    status: "active" as const,
+    status: "upcoming" as const,
   },
   {
     phase: 2,
     title: "DePINFi Launch",
-    months: "6-10",
+    months: "3-7",
     items: [
       "Offshore entity (Dubai/Singapore)",
       "Solana smart contracts + audit",
@@ -139,7 +139,7 @@ export const ROADMAP_PHASES = [
   {
     phase: 3,
     title: "Cohort Tokens",
-    months: "10-16",
+    months: "7-12",
     items: [
       "Meteora DLMM cohort tokens",
       "Performance-linked buybacks",
@@ -152,7 +152,7 @@ export const ROADMAP_PHASES = [
   {
     phase: 4,
     title: "National Scale",
-    months: "16-36",
+    months: "12-36",
     items: [
       "500+ installations, 5+ states",
       "Community solar & C&I projects",
