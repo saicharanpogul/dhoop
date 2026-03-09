@@ -21,6 +21,11 @@ export default function VideoModal({
   const [mode, setMode] = useState<"video" | "audio">("video");
   const [speed, setSpeed] = useState(1);
   const [progress, setProgress] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Close on Escape
   useEffect(() => {
@@ -95,6 +100,8 @@ export default function VideoModal({
     setPlaying(false);
     setMode(m);
   };
+
+  if (!mounted) return null;
 
   return createPortal(
     <AnimatePresence>
