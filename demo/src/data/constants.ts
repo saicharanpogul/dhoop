@@ -96,7 +96,14 @@ export const REVENUE_STREAMS = [
   { stream: "Performance Fee", rate: "10-15%", basis: "Excess yield above target", scaling: "Upside capture" },
 ];
 
-export const ROADMAP_PHASES = [
+export const ROADMAP_PHASES: Array<{
+  phase: number;
+  title: string;
+  months: string;
+  items: string[];
+  capital: string;
+  status: "complete" | "active" | "upcoming";
+}> = [
   {
     phase: 0,
     title: "Foundation",
